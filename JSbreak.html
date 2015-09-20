@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html;" />
+<title>无标题文档</title>
+
+<script>
+
+	var num;
+	for( num = 1; num <= 10; num++) {
+		if (num == 5) {
+		
+			break;  //如果是5，退出循环
+		}
+		document.write("数值：" + num + "<br />");
+	
+	}
+	 
+	document.write("+++++++++++++++++++++++++++++++++++++++++++++++" + "<br />")
+	
+	for( num = 1; num <= 10; num++) {
+		if (num == 5) {
+			document.write("<font color='red';>" + "This place no 5" + "</font><br />")
+			continue;  //如果是5，退出循环
+		}
+		document.write("数值：" + num + "<br />");
+	}
+
+</script>
+
+</head>
+
+<body>
+</body>
+</html>
