@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+
+<script>
+
+	<!----将星期数作为下表，展现--->
+	var week = ["星期天", "星期一","星期二","星期三","星期四","星期五","星期六"]
+	var da = new Date();
+	
+<!--	document.write(week[da.getDay()]);-->
+<!----- 0表示周天，6表示星期六 ----->
+<!----- 0表示12月份，11表示11月份 ----->
+
+	document.write("今天是："+da.getFullYear()+"年"+(da.getMonth()+1)+"月"+da.getDate()+"天"+week[da.getDay()]+" "+da.getHours()+" : "+da.getMinutes()+" : "+da.getSeconds());
+
+</script>
+
+</head>
+
+<body>
+</body>
+</html>

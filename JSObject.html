@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+
+<style>
+	#pd{
+		font color='red';		
+	}
+</style>
+
+
+<script>
+
+	var myarray = new Array(6);  //定义数组对象
+	document.write(myarray.length + "<br />");
+	
+	var da = new Date();
+	document.write("---------------------------------------------" + "<br />")
+	document.write(da.getFullYear() + "<br />");
+	document.write("--------------------------------------------" + "<br />")
+	
+	<!--document.write(da.getDay() + "<font color='red';>" + "[0是星期天；6是星期六]" + "</font> <br />");-->
+	
+	<!---- 尝试下样式，目前还在报错---->
+	document.write(da.getDay() + "<div id="pd">" + " [0是星期天；6是星期六] " + "</div> <br />");
+
+</script>
+
+</head>
+
+<body>
+</body>
+</html>

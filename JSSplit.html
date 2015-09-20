@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+
+<script>
+
+	var str = "www.tao.bao.com";
+	document.write("分割出原串中的所有： " + str.split(".") + "<br />");
+	
+	document.write("--------------------------------------"+"<br />");
+	document.write("分割取前两个： " + str.split(".", 2) + "<br />");
+
+	document.write("--------------------------------------"+"<br />");
+	document.write(str.split("") + "<br />");
+	
+	document.write("--------------------------------------"+"<br />");
+	document.write("拿出split后的以第一串" + str.split("")[1] + "<br />");
+	
+	document.write("--------------------------------------"+"<br />");
+	document.write("拿出 \"" +  str +  "\" 中弟 2~ 4 个元素，作为 string： " + str.substring(2,4));
+
+</script>
+ 
+</head>
+
+<body>
+</body>
+</html>
