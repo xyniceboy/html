@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>无标题文档</title>
+
+<script>
+
+	function tsum( a, b){
+		return a+b;	
+	}
+	 
+	document.write( tsum( 1, 3 ) + "<br />");
+	document.write( tsum( 10, 30 ) + "<br />");
+	document.write( tsum( 100, 300) + "<br />");
+
+	function tnumber(){
+	
+		alert(1000);
+	
+	}
+	
+	<!------ 方法 1 在script中直接调用-------->
+	document.write(tnumber());
+
+</script>
+
+</head>
+
+<body>
+
+<!------ 方法 2 在html中通过其他事件进行调用----->
+<a href="#" onclick="tnumber();">前端大牛！</a>
+
+</body>
+</html>
