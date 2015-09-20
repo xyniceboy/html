@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+
+	<script>
+		
+		function ck() {
+		
+			var da = new Date();
+			
+			document.getElementById("sid").value = da;
+		}
+		
+		clearInterval();  //这个没看出效果
+		<!--- 1s 等于1000ms, 将返回值传给i ---->
+		var i = setInterval(ck, 1000);
+		
+		
+	</script>
+
+</head>
+
+<body>
+	<form>
+		<input name="sname" id="sid" type="text"  size="50"/>	
+		<input type="button" value="Stop" onclick="clearInterval(i)" />
+	</form> 
+</body>
+</html>
