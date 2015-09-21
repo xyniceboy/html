@@ -15,8 +15,9 @@
 	
   	document.write("--------------------------------"+"<br />")
 	
-	indexChar = str.indexOf("c", 4) 
-  	document.write(indexChar == "" ? "没找到" : indexChar);
+	indexChar = str.indexOf("c", 2) 
+	str = indexChar == -1 ? "Hasn't the Elenment" : "The elenment location in " + (indexChar+1)
+  	document.write(str);
   
 </script>
 
